@@ -1,0 +1,99 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 19
+        length: 912
+        placeholder_text: "# TODO: импортируйте классы, созданные в ходе выполнения пр\
+      ошлого задания"
+        initial_state:
+          length: 73
+          offset: 19
+        initialized_from_dependency: false
+        selected: true
+        status: Solved
+        encrypted_possible_answer: "A, B, C"
+      - offset: 961
+        length: 49
+        placeholder_text: "# TODO: инстанцировать все описанные классы, создав три объ\
+      екта."
+        initial_state:
+          length: 64
+          offset: 122
+        initialized_from_dependency: false
+        selected: false
+        status: Solved
+        encrypted_possible_answer: "   a = A()\n    b = B()\n    c = "
+      - offset: 1029
+        length: 45
+        placeholder_text: "# TODO: вызвать метод с некорректными аргументами"
+        initial_state:
+          length: 49
+          offset: 205
+        initialized_from_dependency: false
+        selected: true
+        status: Solved
+        encrypted_possible_answer: '   a.add_another_a'
+      - offset: 1142
+        length: 49
+        placeholder_text: "# TODO: вызвать метод с некорректными аргументами"
+        initial_state:
+          length: 49
+          offset: 340
+        initialized_from_dependency: false
+        selected: true
+        status: Solved
+        encrypted_possible_answer: '   b.add_another_b'
+      - offset: 1277
+        length: 49
+        placeholder_text: "# TODO: вызвать метод с некорректными аргументами"
+        initial_state:
+          length: 49
+          offset: 475
+        initialized_from_dependency: false
+        selected: false
+        status: Solved
+        encrypted_possible_answer: '   c.add_another_c'
+    text: |
+      from task_1 import # TODO: импортируйте классы, созданные в ходе выполнения прошлого задания
+      
+      if __name__ == "__main__":
+       # TODO: инстанцировать все описанные классы, создав три объекта.C()
+      
+          try:
+           # TODO: вызвать метод с некорректными аргументами(b)
+          except TypeError:
+              print('Ошибка: неправильные данные')
+      
+          try:
+           # TODO: вызвать метод с некорректными аргументами(a)
+          except TypeError:
+              print('Ошибка: неправильные данные')
+      
+          try:
+           # TODO: вызвать метод с некорректными аргументами(a)
+          except TypeError:
+              print('Ошибка: неправильные данные')
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    text: |
+      Ошибка: неправильные данные
+      Ошибка: неправильные данные
+      Ошибка: неправильные данные
+    learner_created: false
+  - name: task_1.py
+    visible: true
+    learner_created: true
+  - name: task_2.py
+    visible: true
+    learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 14 Jun 2025 09:37:26 UTC"
+record: -1
