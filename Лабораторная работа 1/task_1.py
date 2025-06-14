@@ -12,7 +12,8 @@ class Book:
          pages: Количество страниц (должно быть положительным целым числом)
         """
         if pages <= 0:
-            raise ValueError("Количество страниц должно быть положительным числом.")
+            raise ValueError(
+                "Количество страниц должно быть положительным числом.")
         self.title = title
         self.author = author
         self.pages = pages
@@ -43,7 +44,8 @@ class Book:
         120
         """
         if extra_pages <= 0:
-            raise ValueError("Число добавляемых страниц должно быть больше нуля.")
+            raise ValueError(
+                "Число добавляемых страниц должно быть больше нуля.")
         self.pages += extra_pages
 
 
@@ -52,7 +54,11 @@ class CoffeeMachine:
     Класс, представляющий кофемашину.
     """
 
-    def __init__(self, model: str, water_capacity_ml: int, current_water_ml: int):
+    def __init__(
+            self,
+            model: str,
+            water_capacity_ml: int,
+            current_water_ml: int):
         """
          model: Название модели кофемашины
          water_capacity_ml: Максимальный объём воды в мл (> 0)
@@ -110,7 +116,9 @@ class CoffeeMachine:
         """
         if amount_ml <= 0:
             raise ValueError("Объём доливаемой воды должен быть больше 0.")
-        self.current_water_ml = min(self.current_water_ml + amount_ml, self.water_capacity_ml)
+        self.current_water_ml = min(
+            self.current_water_ml + amount_ml,
+            self.water_capacity_ml)
 
     def cups_left(self, cup_size_ml: int = 200) -> int:
         """
